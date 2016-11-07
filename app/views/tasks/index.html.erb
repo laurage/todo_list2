@@ -1,0 +1,9 @@
+<h1>All the tasks</h1>
+
+<% @tasks.each do |task| %>
+<% checked = task.checked ? "X" : "/" %>
+<p><%= (link_to task.title, task_path(task)) + "   " + checked %></p>
+<p><%= link_to "Delete", task_path(task), method: :delete%></p>
+<% end %>
+
+<%= link_to "Create a new task", new_task_path %>
