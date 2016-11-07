@@ -1,0 +1,3 @@
+      invoke  active_record
+      create    db/migrate/20161107094604_create_tasks.rb
+      create    app/models/task.rb
