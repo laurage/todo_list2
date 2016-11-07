@@ -1,0 +1,9 @@
+<%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :Checked? %> <br />
+  <%= f.check_box :checked %> <br />
+
+  <%= f.submit %>
+<% end %>
